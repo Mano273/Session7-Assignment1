@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Assignment1</title>
+	<style type="text/css">
+		#btn{
+			    width: 100px;
+		    height: 50px;
+		    border: 4px solid;
+		    background-color: cadetblue;
+		    font-weight: bold;
+		}
+	</style>
+	<script type="text/javascript">
+	function toggle(){
+		var elem= document.getElementById("btn");
+		if(elem.value=="Like")
+		{
+			elem.value="Unlike";
+			elem.style="width: 100px;height: 50px;border: 4px solid;background-color: Orange; color:white;font-weight: bold;";
+		}
+		else
+		{
+			elem.value="Like";
+			elem.style="width: 100px;height: 50px;border: 4px solid;background-color:cadetblue; color:black;font-weight: bold;";
+
+		}
+	}
+
+	</script>
+</head>
+<body>
+<input id="btn" type="Button" value="Like" onclick="toggle()" >
+</body>
+</html>
